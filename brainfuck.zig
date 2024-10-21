@@ -58,7 +58,7 @@ pub fn main() !void {
     try append_n_elements(&cells, 1);
 
     var position: usize = 0;
-    try evaluate(cells, &position, false, instructions);
+    try evaluate(&cells, &position, false, instructions);
 }
 
 fn evaluate(cells: *ArrayList(i32), position: *usize, loop: bool, instructions: ArrayList(Instruction)) !void {
